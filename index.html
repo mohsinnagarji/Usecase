@@ -1,1 +1,215 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Joomla Customer Use Cases</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap">
+    <style>
+        :root {
+            --primary: #4f8cff;
+            --secondary: #00c6ae;
+            --accent: #a259ff;
+            --bg: #f7fafd;
+            --card-bg: #fff;
+            --text: #232946;
+            --muted: #6b7a90;
+            --shadow: 0 4px 24px rgba(79,140,255,0.08);
+            --radius: 18px;
+        }
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+        }
+        .hero {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            color: #fff;
+            padding: 56px 0 36px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        .hero p {
+            font-size: 1.15em;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .usecase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 48px auto;
+            padding: 0 20px;
+        }
+        .usecase-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 32px 28px 24px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-top: 6px solid var(--primary);
+            transition: box-shadow 0.2s, border-color 0.2s;
+            position: relative;
+        }
+        .usecase-card:hover {
+            box-shadow: 0 8px 32px rgba(79,140,255,0.16);
+            border-top: 6px solid var(--accent);
+        }
+        .usecase-title {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .usecase-title a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .usecase-meta {
+            font-size: 0.98em;
+            color: var(--muted);
+            margin-bottom: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .usecase-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--primary) 60%, var(--secondary) 100%);
+            color: #fff;
+            border-radius: 12px;
+            padding: 2px 12px;
+            font-size: 0.93em;
+            font-weight: 600;
+        }
+        .usecase-section {
+            margin-top: 8px;
+        }
+        .usecase-section strong {
+            color: var(--accent);
+        }
+        .usecase-section ul {
+            margin: 6px 0 0 0;
+            padding-left: 18px;
+        }
+        .usecase-section li {
+            margin-bottom: 4px;
+            font-size: 0.98em;
+        }
+        .icon {
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        .footer {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+            color: #fff;
+            padding: 36px 0 18px 0;
+            font-size: 1em;
+            text-align: center;
+            margin-top: 60px;
+        }
+        @media (max-width: 700px) {
+            .usecase-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Top Joomla Customer Use Cases</h1>
+        <p>Explore how leading organizations leverage modern SSO and user sync solutions for Joomla to drive security, efficiency, and business value.</p>
+    </section>
+    <section class="usecase-grid">
+        <!-- Customer 1 -->
+        <div class="usecase-card">
+            <div class="usecase-title"><span class="icon">🏢</span><a href="https://pbucc.org" target="_blank">pbucc.org</a></div>
+            <div class="usecase-meta">
+                <span class="usecase-badge">88+ Users</span>
+                <span class="usecase-badge">Finance</span>
+                <span class="usecase-badge">2023</span>
+            </div>
+            <div class="usecase-section"><strong>Products:</strong> SAML SP + IDP</div>
+            <div class="usecase-section"><strong>Business Usecase:</strong> Life Insurance, Pension plans and Financial Consultancy</div>
+            <div class="usecase-section"><strong>Technical Usecase:</strong> SSO into Joomla with Azure AD as IDP</div>
+        </div>
+        <!-- Customer 2 -->
+        <div class="usecase-card">
+            <div class="usecase-title"><span class="icon">🏢</span><a href="https://dotcomm.org" target="_blank">dotcomm.org</a></div>
+            <div class="usecase-meta">
+                <span class="usecase-badge">80+ Users</span>
+                <span class="usecase-badge">Technical support + Consultancy</span>
+                <span class="usecase-badge">2020</span>
+            </div>
+            <div class="usecase-section"><strong>Products:</strong> SAML SP</div>
+            <div class="usecase-section"><strong>Business Usecase:</strong> DOTComm provides technical support and consulting to roughly 70 governmental entities and over 5,000 dedicated government workers spread across 120 locations.</div>
+            <div class="usecase-section"><strong>Technical Usecase:</strong> SSO into Joomla with Okta as IDP and User sync between Okta and Joomla.</div>
+        </div>
+        <!-- Customer 3 -->
+        <div class="usecase-card">
+            <div class="usecase-title"><span class="icon">🏢</span><a href="https://eastriding.gov.uk" target="_blank">eastriding.gov.uk</a></div>
+            <div class="usecase-meta">
+                <span class="usecase-badge">10k Users</span>
+                <span class="usecase-badge">Government Entity</span>
+                <span class="usecase-badge">2023</span>
+            </div>
+            <div class="usecase-section"><strong>Products:</strong> SAML SP</div>
+            <div class="usecase-section"><strong>Business Usecase:</strong> Government entity that provides council services to East Riding.</div>
+            <div class="usecase-section"><strong>Technical Usecase:</strong> SSO into Joomla with Azure AD as IDP</div>
+        </div>
+        <!-- Customer 4 -->
+        <div class="usecase-card">
+            <div class="usecase-title"><span class="icon">🏢</span><a href="https://telefonica.com" target="_blank">telefonica.com</a></div>
+            <div class="usecase-meta">
+                <span class="usecase-badge">103,638 Users</span>
+                <span class="usecase-badge">IT + Networking Services</span>
+                <span class="usecase-badge">2019</span>
+            </div>
+            <div class="usecase-section"><strong>Products:</strong> SAML SP</div>
+            <div class="usecase-section"><strong>Business Usecase:</strong> IT and networking solutions for businesses.</div>
+            <div class="usecase-section"><strong>Technical Usecase:</strong> SSO into Joomla with Azure AD as IDP</div>
+        </div>
+        <!-- Customer 5 -->
+        <div class="usecase-card">
+            <div class="usecase-title"><span class="icon">🏢</span><a href="https://ieee.org" target="_blank">ieee.org</a></div>
+            <div class="usecase-meta">
+                <span class="usecase-badge">1k+ Users</span>
+                <span class="usecase-badge">NPO</span>
+                <span class="usecase-badge">2019</span>
+            </div>
+            <div class="usecase-section"><strong>Products:</strong> SAML SP</div>
+            <div class="usecase-section"><strong>Business Usecase:</strong> Works toward innovating, educating and standardizing the electrical and electronic development industry.</div>
+            <div class="usecase-section"><strong>Technical Usecase:</strong> SSO into Joomla with Azure AD as IDP</div>
+        </div>
+        <!-- Customer 6 -->
+        <div class="usecase-card">
+            <div class="usecase-title"><span class="icon">🏢</span><a href="https://insight.com" target="_blank">insight.com</a></div>
+            <div class="usecase-meta">
+                <span class="usecase-badge">10k Users</span>
+                <span class="usecase-badge">Technology + consultancy</span>
+                <span class="usecase-badge">2023</span>
+            </div>
+            <div class="usecase-section"><strong>Products:</strong> SAML SP</div>
+            <div class="usecase-section"><strong>Business Usecase:</strong> Provides IT services, consultancy and management to clients.</div>
+            <div class="usecase-section"><strong>Technical Usecase:</strong> SSO into Joomla with Simpla SSO as IDP + Partner as reseller</div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>© 2024 Top Joomla Use Cases. All rights reserved.</div>
+    </footer>
+</body>
+</html> 
